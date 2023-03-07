@@ -51,6 +51,7 @@ const UserCard = () => {
     useEffect(() => {
       axios.get("https://dummyjson.com/users/7")
         .then((response) => {
+            console.log(response)
             setUser(response.data)
         })
     }, [])
